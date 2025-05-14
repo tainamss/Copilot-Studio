@@ -37,6 +37,50 @@ Marcar a consulta do usuário após ser informado a especialidade que precisa a 
 |-------|---------|---------|
 |```datetime```| Padrão| "amanhã às 9h"
 |```specialty```| Personalizada| "dermatologista"|
+
+# Parte 2 - Um guia prático para aprimorar seu agente
+## Passo a passo:
+### Como customizar um tópico no Copilot Studio 
+
+#### Vamos customizar nosso agente adicionando tópicos customizados 
+
+1- Indo na aba Tópicos vamos adicionar um novo tópico <br> 
+2- Não se esqueça de nomeá-lo de forma intuitiva! Além disso adicione as frases de gatilho<br> 
+3-No fluxo de conversa adicionaremos condições, utilizaremos variáveis, para que seja um diálogo fluido
+
+### Como personalizar uma mensagem de erro no tópico 
+
+#### Usamos as mensagens de erro quando:
+
+- O usuário nos dá uma entrada invalida;
+- O fluxo não encontra um caminho válido que ele possa seguir;
+- Há um erro ao chamar um fluxo externo.
+  
+#### Como personalizar: 
+- Entrada inválida:<br>
+
+1- No passo onde há a pergunta ao usuário, clique no nó da pergunta.<br> 
+2- Habilite a opção "Validar resposta".<br>
+3- Escolha uma expressão (ex: tipo de dado, regex).<br>
+4- Escreva a mensagem personalizada de erro (ex: "Essa especialidade não se encontra no nosso sistema. Tente novamente.").<br>
+
+- Fluxo não encontra caminho: <br>
+Sempre termine caminhos com uma mensagem final personalizada, como:
+- "Não entendi sua resposta, poderia reformular?"
+- "Parece que tivemos um problema técnico. Você pode tentar novamente?"
+
+## Dicas para aumentar a qualidade da resposta com GenAI:
+- Seja Claro e Específico no Prompt;
+- Defina o papel do seu agente e o tom da resposta que ele deve dar; 
+- Use exemplos de entrada e saída;
+- Use restrições claras;
+- Personalize com variáveis dinâmicas;
+- Combine com regras de negócio
+
+
+
+
+
     
 
 
